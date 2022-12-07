@@ -13,7 +13,6 @@ public class GuessNumber {
         System.out.println("Enter number for 0 to 10:");
 
         Scanner scanner = new Scanner(System.in);
-
         if (scanner.hasNextInt()) {
                 scannerNumber = scanner.nextInt();
                 if (scannerNumber == random) {
