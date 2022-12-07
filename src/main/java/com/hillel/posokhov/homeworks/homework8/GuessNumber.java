@@ -1,10 +1,9 @@
-package com.hillel.posokhov.homeworks.homework7;
+package com.hillel.posokhov.homeworks.homework8;
 
 import java.util.Scanner;
 
 public class GuessNumber {
     public static void main(String[] args) {
-
         int range = 11;
         int random = (int) (Math.random() * range);
         int scannerNumber;
