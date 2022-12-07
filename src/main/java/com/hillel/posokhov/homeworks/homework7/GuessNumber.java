@@ -38,7 +38,6 @@ public class GuessNumber {
                 if (scannerNumber > random || scannerNumber < random) {
                     System.out.println("You Lose!");
                 }
-
         } else {
             System.out.println("Wrong Data! Try Next Time!!!");
         }
