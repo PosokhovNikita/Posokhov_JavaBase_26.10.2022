@@ -7,7 +7,8 @@ public class Person {
         personInfo("Sherlock Holmes","London","86754345764");
     }
 
-    static void personInfo(String name, String city, String number){
+    static String personInfo(String name, String city, String number){
         System.out.println("Calling citizen " + name + " from city " + city + " you can at number " + number + '.');
+        return name + city + number;
     }
 }
