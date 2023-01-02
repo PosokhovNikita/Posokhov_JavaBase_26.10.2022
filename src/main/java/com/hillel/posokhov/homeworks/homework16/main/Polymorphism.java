@@ -1,4 +1,4 @@
-package com.hillel.posokhov.homeworks.homework16;
+package com.hillel.posokhov.homeworks.homework16.main;
 
 import com.hillel.posokhov.homeworks.homework16.classes.ClassicMusic;
 import com.hillel.posokhov.homeworks.homework16.classes.PopMusic;
