@@ -1,31 +1,39 @@
 package com.hillel.posokhov.homeworks.homework13;
 
 public class Burger {
-    String ing1 = "bun";
-    String ing2 = "meat";
-    String ing3 = "cheese";
-    String ing4 = "greens";
-    String ing5 = "mayonnaise";
-    String ing6 = "double meat";
+    String bun;
+    String meat;
+    String cheese;
+    String greens;
+    String mayonnaise;
+    boolean doubleMeat;
 
-    public String usualBurger(String ing1, String ing2, String ing3, String ing4, String ing5) {
-        return ing1 + ing2 + ing3 + ing4 + ing5;
+    public Burger(String bun, String meat, String cheese, String greens, String mayonnaise) {
+        this.bun = bun;
+        this.meat = meat;
+        this.cheese = cheese;
+        this.greens = greens;
+        this.mayonnaise = mayonnaise;
+        System.out.println("Classic burger contains: " + bun + ", " + meat + ", " + cheese + ", " + greens
+                + ", " + mayonnaise + ".");
     }
 
-    public String dietBurger(String ing1, String ing2, String ing3, String ing4) {
-        return ing1 + ing2 + ing3 + ing4;
+    public Burger(String bun, String meat, String cheese, String greens) {
+        this.bun = bun;
+        this.meat = meat;
+        this.cheese = cheese;
+        this.greens = greens;
+        System.out.println("Diet burger contains: " + bun + ", " + meat + ", " + cheese + ", " + greens + ".");
     }
 
-    public String doubleMeatBurger(String ing1, String ing3, String ing4, String ing5, String ing6) {
-        return ing1 + ing3 + ing4 + ing5 + ing6;
-    }
-
-    void printBurgers(){
-        System.out.print("Usual burger consist of: ");
-        System.out.println(usualBurger(ing1, ", " + ing2, ", " + ing3, ", " + ing4, ", " + ing5));
-        System.out.print("Diet burger consist of: ");
-        System.out.println(dietBurger(ing1, ", " + ing2, ", " + ing3, ", " + ing4));
-        System.out.print("Double meat burger consist of: ");
-        System.out.println(doubleMeatBurger(ing1,", "+ ing3,", "+ ing4,", "+ ing5,", "+ ing6));
+    public Burger(String bun, String meat, String cheese, String greens, String mayonnaise, boolean doubleMeat) {
+        this.bun = bun;
+        this.meat = meat;
+        this.cheese = cheese;
+        this.greens = greens;
+        this.mayonnaise = mayonnaise;
+        this.doubleMeat = doubleMeat;
+        System.out.println("Burger with double meat contains: " + bun + ", " + meat + " count = " + (doubleMeat ? 2 : 1) +
+                ", " + cheese + ", " + greens + ", " + mayonnaise + ". ");
     }
 }
