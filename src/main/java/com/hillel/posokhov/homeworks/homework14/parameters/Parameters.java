@@ -1,8 +1,10 @@
 package com.hillel.posokhov.homeworks.homework14.parameters;
 
 public class Parameters {
-    private int day,month,year,weight,steps, age = 2020;
-    private String name,email,surname,pressure, numberPhone;
+    private int weight,steps, age = 2020;
+    private final int day,month,year;
+    private final String name,email,numberPhone;
+    private String surname,pressure;
     public String getNumberPhone() {
         return numberPhone;
     }
